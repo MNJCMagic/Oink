@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		272B2E4A2141AA08000E17D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E492141AA08000E17D0 /* AppDelegate.swift */; };
-		272B2E4C2141AA09000E17D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E4B2141AA09000E17D0 /* ViewController.swift */; };
 		272B2E4F2141AA09000E17D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E4D2141AA09000E17D0 /* Main.storyboard */; };
 		272B2E512141AA0A000E17D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E502141AA0A000E17D0 /* Assets.xcassets */; };
 		272B2E542141AA0A000E17D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E522141AA0A000E17D0 /* LaunchScreen.storyboard */; };
+		272B2E5C2141AA6B000E17D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E5B2141AA6B000E17D0 /* GoogleService-Info.plist */; };
+		272B2E5E2141AE59000E17D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E5D2141AE59000E17D0 /* HomeViewController.swift */; };
+		272B2E602141AEA9000E17D0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E5F2141AEA9000E17D0 /* LogInViewController.swift */; };
+		272B2E622141B06B000E17D0 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E612141B06B000E17D0 /* CreateAccountViewController.swift */; };
+		272B2E6421430EDC000E17D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E6321430EDC000E17D0 /* User.swift */; };
+		272B2E6621430FC2000E17D0 /* Oink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E6521430FC2000E17D0 /* Oink.swift */; };
+		272B2E68214311CF000E17D0 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E67214311CF000E17D0 /* Friend.swift */; };
+		272B2E6A214316D1000E17D0 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E69214316D1000E17D0 /* DatabaseManager.swift */; };
+		E79F5A880F6F60BA024DAA21 /* Pods_Hoink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6C3054B4655B67250DB01 /* Pods_Hoink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		272B2E462141AA08000E17D0 /* Hoink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272B2E492141AA08000E17D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		272B2E4B2141AA09000E17D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		272B2E4E2141AA09000E17D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		272B2E502141AA0A000E17D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272B2E532141AA0A000E17D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272B2E552141AA0A000E17D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272B2E5B2141AA6B000E17D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		272B2E5D2141AE59000E17D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		272B2E5F2141AEA9000E17D0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		272B2E612141B06B000E17D0 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		272B2E6321430EDC000E17D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		272B2E6521430FC2000E17D0 /* Oink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oink.swift; sourceTree = "<group>"; };
+		272B2E67214311CF000E17D0 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		272B2E69214316D1000E17D0 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7B510AFFE9706BD3C2D7ED66 /* Pods-Hoink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hoink/Pods-Hoink.debug.xcconfig"; sourceTree = "<group>"; };
+		CBC6C3054B4655B67250DB01 /* Pods_Hoink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hoink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD0765833A8EC38C009EB2B /* Pods-Hoink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hoink/Pods-Hoink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79F5A880F6F60BA024DAA21 /* Pods_Hoink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				272B2E482141AA08000E17D0 /* Hoink */,
 				272B2E472141AA08000E17D0 /* Products */,
+				F10E4846B38ADC7CACDBA395 /* Pods */,
+				D9481643756D345BB733EAD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,37 @@
 			isa = PBXGroup;
 			children = (
 				272B2E492141AA08000E17D0 /* AppDelegate.swift */,
-				272B2E4B2141AA09000E17D0 /* ViewController.swift */,
 				272B2E4D2141AA09000E17D0 /* Main.storyboard */,
+				272B2E6321430EDC000E17D0 /* User.swift */,
+				272B2E69214316D1000E17D0 /* DatabaseManager.swift */,
+				272B2E67214311CF000E17D0 /* Friend.swift */,
+				272B2E6521430FC2000E17D0 /* Oink.swift */,
+				272B2E612141B06B000E17D0 /* CreateAccountViewController.swift */,
+				272B2E5F2141AEA9000E17D0 /* LogInViewController.swift */,
+				272B2E5D2141AE59000E17D0 /* HomeViewController.swift */,
 				272B2E502141AA0A000E17D0 /* Assets.xcassets */,
 				272B2E522141AA0A000E17D0 /* LaunchScreen.storyboard */,
 				272B2E552141AA0A000E17D0 /* Info.plist */,
+				272B2E5B2141AA6B000E17D0 /* GoogleService-Info.plist */,
 			);
 			path = Hoink;
+			sourceTree = "<group>";
+		};
+		D9481643756D345BB733EAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6C3054B4655B67250DB01 /* Pods_Hoink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F10E4846B38ADC7CACDBA395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B510AFFE9706BD3C2D7ED66 /* Pods-Hoink.debug.xcconfig */,
+				ECD0765833A8EC38C009EB2B /* Pods-Hoink.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272B2E582141AA0A000E17D0 /* Build configuration list for PBXNativeTarget "Hoink" */;
 			buildPhases = (
+				3879758C242E6706220959E6 /* [CP] Check Pods Manifest.lock */,
 				272B2E422141AA08000E17D0 /* Sources */,
 				272B2E432141AA08000E17D0 /* Frameworks */,
 				272B2E442141AA08000E17D0 /* Resources */,
+				72B683947A52BC93B5FCE86B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272B2E542141AA0A000E17D0 /* LaunchScreen.storyboard in Resources */,
+				272B2E5C2141AA6B000E17D0 /* GoogleService-Info.plist in Resources */,
 				272B2E512141AA0A000E17D0 /* Assets.xcassets in Resources */,
 				272B2E4F2141AA09000E17D0 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +178,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3879758C242E6706220959E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hoink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B683947A52BC93B5FCE86B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hoink/Pods-Hoink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hoink/Pods-Hoink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272B2E422141AA08000E17D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272B2E4C2141AA09000E17D0 /* ViewController.swift in Sources */,
+				272B2E6A214316D1000E17D0 /* DatabaseManager.swift in Sources */,
+				272B2E622141B06B000E17D0 /* CreateAccountViewController.swift in Sources */,
+				272B2E68214311CF000E17D0 /* Friend.swift in Sources */,
 				272B2E4A2141AA08000E17D0 /* AppDelegate.swift in Sources */,
+				272B2E6621430FC2000E17D0 /* Oink.swift in Sources */,
+				272B2E5E2141AE59000E17D0 /* HomeViewController.swift in Sources */,
+				272B2E6421430EDC000E17D0 /* User.swift in Sources */,
+				272B2E602141AEA9000E17D0 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +389,13 @@
 		};
 		272B2E592141AA0A000E17D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B510AFFE9706BD3C2D7ED66 /* Pods-Hoink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36N89YW4Y8;
 				INFOPLIST_FILE = Hoink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +409,13 @@
 		};
 		272B2E5A2141AA0A000E17D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD0765833A8EC38C009EB2B /* Pods-Hoink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36N89YW4Y8;
 				INFOPLIST_FILE = Hoink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
