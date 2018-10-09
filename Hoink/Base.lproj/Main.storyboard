@@ -157,6 +157,79 @@
             </objects>
             <point key="canvasLocation" x="774" y="15"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mRm-TN-qbi">
+            <objects>
+                <tabBarController id="FcH-su-k5H" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fJ0-kT-D13">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Suu-gZ-iHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="62"/>
+        </scene>
+        <!--Oink Recorder View Controller-->
+        <scene sceneID="V9y-p0-CLH">
+            <objects>
+                <viewController id="4Ab-rm-8ON" customClass="OinkRecorderViewController" customModule="Hoink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1pI-nL-K7U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-52-990">
+                                <rect key="frame" x="145" y="161" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Oink"/>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="4Ab-rm-8ON" eventType="touchUpInside" id="Fh2-Xm-cd1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRw-bZ-cOp">
+                                <rect key="frame" x="155" y="218" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Oink"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="4Ab-rm-8ON" eventType="touchUpInside" id="kxr-AU-9jO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STa-eH-XMV">
+                                <rect key="frame" x="153" y="278" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Oink"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="4Ab-rm-8ON" eventType="touchUpInside" id="kqu-Ky-UFc"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Oink" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYt-tp-oHb">
+                                <rect key="frame" x="109" y="336" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4Ab-rm-8ON" id="2at-cv-Hgh"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ael-dM-43Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="OinkNameTextField" destination="tYt-tp-oHb" id="SuK-ul-Uvu"/>
+                        <outlet property="oinkNameTextField" destination="tYt-tp-oHb" id="dph-wc-uAG"/>
+                        <outlet property="playButton" destination="dRw-bZ-cOp" id="b2o-bC-SRT"/>
+                        <outlet property="recordButton" destination="Ymr-52-990" id="IgJ-1R-BpL"/>
+                        <outlet property="saveButton" destination="STa-eH-XMV" id="xe4-YJ-Hx8"/>
+                        <outlet property="saveButtonPressed" destination="STa-eH-XMV" id="xaB-MR-9AA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LxP-9E-H4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581.5999999999999" y="262.21889055472263"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sdc-bH-npY"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2717106C216D39A400F0A70F /* OinkRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717106B216D39A400F0A70F /* OinkRecorderViewController.swift */; };
 		272B2E4A2141AA08000E17D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B2E492141AA08000E17D0 /* AppDelegate.swift */; };
 		272B2E4F2141AA09000E17D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E4D2141AA09000E17D0 /* Main.storyboard */; };
 		272B2E512141AA0A000E17D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272B2E502141AA0A000E17D0 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2717106B216D39A400F0A70F /* OinkRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OinkRecorderViewController.swift; sourceTree = "<group>"; };
 		272B2E462141AA08000E17D0 /* Hoink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272B2E492141AA08000E17D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272B2E4E2141AA09000E17D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				272B2E492141AA08000E17D0 /* AppDelegate.swift */,
 				272B2E4D2141AA09000E17D0 /* Main.storyboard */,
+				2717106B216D39A400F0A70F /* OinkRecorderViewController.swift */,
 				272B2E6321430EDC000E17D0 /* User.swift */,
 				272B2E69214316D1000E17D0 /* DatabaseManager.swift */,
 				272B2E67214311CF000E17D0 /* Friend.swift */,
@@ -245,6 +248,7 @@
 				272B2E68214311CF000E17D0 /* Friend.swift in Sources */,
 				272B2E4A2141AA08000E17D0 /* AppDelegate.swift in Sources */,
 				272B2E6621430FC2000E17D0 /* Oink.swift in Sources */,
+				2717106C216D39A400F0A70F /* OinkRecorderViewController.swift in Sources */,
 				272B2E5E2141AE59000E17D0 /* HomeViewController.swift in Sources */,
 				272B2E6421430EDC000E17D0 /* User.swift in Sources */,
 				272B2E602141AEA9000E17D0 /* LogInViewController.swift in Sources */,
