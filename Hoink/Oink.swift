@@ -12,7 +12,7 @@ class Oink: NSObject {
     
     var name: String?
     var createdBy: String?
-    var downloadURL: String?
+    var downloadURL: URL?
     var audioFile: Data?
     var createdDate: Date?
     

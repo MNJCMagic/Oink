@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Firebase
 import FirebaseAuth
-import FirebaseFirestore
+//import FirebaseFirestore
 
 class OinkRecorderViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
 
@@ -23,6 +23,8 @@ class OinkRecorderViewController: UIViewController, AVAudioRecorderDelegate, AVA
     var audioPlayer: AVAudioPlayer!
     var recordingSession: AVAudioSession!
     var user: User!
+    var storageManager = StorageManager()
+    var databaseManager = DatabaseManager()
     
     
     override func viewDidLoad() {
@@ -35,8 +37,7 @@ class OinkRecorderViewController: UIViewController, AVAudioRecorderDelegate, AVA
                 UserDefaults.standard.set(uid, forKey: "UID")
             }
         }
-        
-        // Do any additional setup after loading the view.
+        self.startAudioSession()
     }
 
     func startAudioSession() {
@@ -141,37 +142,17 @@ class OinkRecorderViewController: UIViewController, AVAudioRecorderDelegate, AVA
     @IBAction func saveButtonPressed(_ sender: Any) {
         
         if oinkNameTextField.text == "" {
-            let alert = UIAlertController(title: "Please name your Oink", message: "Come on, piggy", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Please name your oink", message: "Come on piggy", preferredStyle: .alert)
             self.present(alert, animated: true)
         }
         
         guard let title = oinkNameTextField.text else { return }
         
-        let storage = Storage.storage()
-        let storageRef = storage.reference()
-        let oinksRef = storageRef.child("oinks/\(title).m4a")
         let file = try? Data(contentsOf: self.getFileURL())
         guard let oink = file else { return }
         
-        let uploadTask = oinksRef.putData(oink, metadata: nil) { (metadata, error) in
-            oinksRef.downloadURL(completion: { (url, error) in
-                guard let downloadURL = url else { return }
-                var ref: DocumentReference? = nil
-                let db = Firestore.firestore()
-                ref = db.collection("users").document("\(self.user.UID)").collection("createdOinks").addDocument(data: [
-                    "title": "\(title)",
-                    "createdBy": "\(self.user.name)",
-                    "url": "\(downloadURL)"
-                ]) { err in
-                    if let err = err {
-                        print("Error adding oink: \(err)")
-                    } else {
-                        print("Oink added with ID: \(ref!.documentID)")
-                    }
-                }
-            })
-        }
-        uploadTask.resume()
+        storageManager.storeOink(oink: oink, title: title)
+        
     }
     
 }

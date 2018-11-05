@@ -18,6 +18,7 @@ class DatabaseManager: NSObject {
     var ref: DocumentReference? = nil
     
     func storeNewUser(user: User) {
+        
         let userData: [String: Any] = [
             "nickname": user.nickname!,
             "UID": user.UID!
@@ -27,6 +28,24 @@ class DatabaseManager: NSObject {
                 print("error writing doc: \(error.localizedDescription)")
             } else {
                 print("user \(user.UID!) added to firestore")
+            }
+        }
+    }
+    
+    func storeOink(oink: Oink) {
+        
+        let uid = UserDefaults.standard.value(forKey: "UID") as! String
+
+        db.collection("users").document("\(uid)").collection("createdOinks").addDocument(data: [
+            "name": "\(String(describing: oink.name))",
+            "createdBy": "\(String(describing: oink.createdBy))",
+            "url": oink.downloadURL!,
+            "createdDate": oink.createdDate!
+        ]) { (error) in
+            if let error = error {
+                print("Error adding Oink: \(error)")
+            } else {
+                print("oink added")
             }
         }
     }
